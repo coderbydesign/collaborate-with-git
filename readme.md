@@ -5,13 +5,13 @@
 * Create a github account
 
 * Install git on your computer. `sudo install git` Or refer to <a href="http://githowto.com">http://githowto.com </a>
-	
+
 * Configure git on your computer. Make sure these correspond with your github account settings.
 ```
 git config --global user.name "Your Name"
 git config --global user.email "your_email@whatever.com"
 ```
-	
+
 * cd to your gem’s project root directory
 
 * Initialize a git project in this directory `git init`
@@ -26,10 +26,11 @@ git config --global user.email "your_email@whatever.com"
 ```git remote add origin git@github.com:github-handle/repo-name.git
 ```
 
-* Push your commits to the remote repository 
-```git push -u origin master
+* Push your commits to the remote repository
 ```
- 
+git push -u origin master
+```
+
 <h2>2. Basic Version Control of Your Repo</h2>
 
 <b>Resource:</b> http://byte.kde.org/~zrusin/git/git-cheat-sheet-medium.png <br>
@@ -50,8 +51,8 @@ git config --global user.email "your_email@whatever.com"
 <b>Resource:</b> https://help.github.com/articles/fork-a-repo
 
 * Go to original author’s repo on github and fork into a github repo on your account.
-* Clone your forked repo onto your local computer 
-```git clone git@github.com:your-git-handle/reponame.git 
+* Clone your forked repo onto your local computer
+```git clone git@github.com:your-git-handle/reponame.git
 * If you get error: port 22 connection refused, it’s probably an issue with github not being able to find your ssh key. Here’s a solution: http://stackoverflow.com/questions/7953806/github-ssh-via-public-wifi-port-22-blocked
 * Create a new branch for your repo. This is where you will make your changes. We will work from a new branch, leaving the original master branch unchanged. This will later allow us to submit a pull request without getting merge conflicts with the original branch. The new branch we will create will start off identically to the master branch:
 ```git checkout origin -b <new-branch-name>
@@ -61,7 +62,7 @@ git config --global user.email "your_email@whatever.com"
 ```git remote add upstream https://github.com/YourGitHandle/Reponame.git
 * Push your commit
 * Go to your github repo. Go to your <new-branch-name> branch. Submit pull request
-* The original author may now authorize the pull request. Once authorized, the author can now merge the new branch into the master branch with 
+* The original author may now authorize the pull request. Once authorized, the author can now merge the new branch into the master branch with
 ```git checkout <new-branch-name>
 ```git merge master
 
