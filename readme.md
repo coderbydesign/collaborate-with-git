@@ -7,9 +7,8 @@
 * Install git on your computer. `sudo install git` Or refer to <a href="http://githowto.com">http://githowto.com </a>
 	
 * Configure git on your computer. Make sure these correspond with your github account settings.
-```git config --global user.name "Your Name"```
-
-```git config --global user.email "your_email@whatever.com"```
+```git config --global user.name "Your Name"
+git config --global user.email "your_email@whatever.com"```
 	
 * cd to your gem’s project root directory
 
